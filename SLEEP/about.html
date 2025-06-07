@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sleep Set Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .about-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(44, 40, 77, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 1rem 2rem;
+            background: #FFB98B;
+            border: none;
+            border-radius: 10px;
+            color: #1a1135;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            background: #A78BFA;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
+        }
+
+        .about-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .about-section:hover {
+            transform: translateY(-2px);
+            border-color: #FFB98B;
+            box-shadow: 0 4px 20px rgba(255, 185, 139, 0.1);
+        }
+
+        .about-section h2 {
+            color: #FFE0B2;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 15px rgba(255, 224, 178, 0.4);
+        }
+
+        .about-section h3 {
+            color: #a5f3fc;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .about-section p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .mission-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border: 1px solid rgba(167, 139, 250, 0.2);
+        }
+
+        .mission-box h3 {
+            color: #FFE0B2;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .mission-box p {
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #FFB98B;
+            box-shadow: 0 4px 20px rgba(255, 185, 139, 0.1);
+        }
+
+        .feature-card h4 {
+            color: #FFE0B2;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .creator-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+        }
+
+        .creator-section h3 {
+            color: #FFE0B2;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .creator-section p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .mission-box {
+                padding: 1.5rem;
+            }
+
+            .mission-box h3 {
+                font-size: 1.4rem;
+            }
+
+            .mission-box p {
+                font-size: 1.1rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Sleep Set Calculator</a>
+        
+        <div class="about-container">
+            <div class="mission-box">
+                <h3>Our Mission</h3>
+                <p>Empowering everyone to achieve better sleep through science-based tools and understanding. We believe quality sleep is not just a luxury—it's a fundamental right.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>About Sleep Set Calculator</h2>
+                <p>Welcome to our Sleep Set Calculator, a tool designed with care and precision to help you optimize your sleep cycles. We understand that quality sleep is the foundation of a healthy, productive life, which is why we've created this intuitive calculator to help you find your perfect sleep schedule.</p>
+                
+                <h3>Why Sleep Cycles Matter</h3>
+                <p>Sleep isn't just about getting enough hours—it's about timing those hours perfectly with your natural sleep cycles. Our calculator helps you align your sleep schedule with your body's natural rhythm, ensuring you wake up feeling refreshed and energized.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>💫 Scientific Approach</h4>
+                        <p>Based on sleep cycle research and circadian rhythm studies to provide accurate recommendations.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>🌙 User-Friendly Design</h4>
+                        <p>Simple, intuitive interface that makes sleep planning effortless and enjoyable.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>⏰ Precise Timing</h4>
+                        <p>Calculates optimal wake-up times based on 90-minute sleep cycles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="creator-section">
+                <h3>Meet the Creator</h3>
+                <p>Hi, I'm Zero! I created this Sleep Set Calculator because I believe everyone deserves to experience the benefits of optimal sleep. As someone passionate about health and technology, I wanted to create a tool that makes sleep science accessible to everyone.</p>
+                <p style="margin-top: 1rem;">Have questions or suggestions? Feel free to <a href="contact.html" style="color: #A78BFA; text-decoration: none;">reach out</a>—I'm always here to help!</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Commitment</h3>
+                <p>We're dedicated to continuously improving our calculator based on user feedback and the latest sleep research. Our goal is to help you understand and optimize your sleep patterns for better health and well-being.</p>
+                
+                <p>Whether you're a night owl trying to fix your sleep schedule, an early bird looking to optimize your rest, or someone in between, our Sleep Set Calculator is here to guide you toward better sleep.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
